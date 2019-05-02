@@ -1,7 +1,10 @@
-def hello():
-    print('Functions Hello World!')
+from utils import file_handling_util
 
 
-print('Orphan Hello World!')
+def hello(msg):
+    print('Hello from ' + msg)
 
 
+if __name__ == '__main__':
+    current_module_name = file_handling_util.get_file_name_from_path(__file__)
+    hello(current_module_name)
