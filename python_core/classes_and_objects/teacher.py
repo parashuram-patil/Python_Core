@@ -6,4 +6,6 @@ class Student(Person):
     Person.__init__(self, fname, lname)
     self.graduationyear = year
 
+  def print(self):
+    print(self.name + ' is ' + str(self.age) + ' old! and graduated in ' + str(self.graduationyear))
 
